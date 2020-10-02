@@ -116,15 +116,17 @@ function draw() {
 
      if(particle.body.position.x>601 && particle.body.position.x<900 ){
       score=score+1000;
-      turn++
       particle=null;
-      
      }
+     if(score%500===0){
+      turn++
+    }
+   
     }
   }
-  }
  
-  if(turn===30){
+  }
+  if(turn===5){
     gamestate="end";
   }
   if(gamestate === "end"){
@@ -133,7 +135,7 @@ function draw() {
 
 
   text("Score : "+score,20,30);
-  text("turns"+turn,0,100);
+  text("turns : "+turn,0,100);
   //ground2.display();
 
 }
