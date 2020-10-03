@@ -118,9 +118,6 @@ function draw() {
       score=score+1000;
       particle=null;
      }
-     if(score%500===0){
-      turn++
-    }
    
     }
   }
@@ -143,10 +140,10 @@ function draw() {
 
 function mousePressed(){
   if(gamestate !== "end"){
-   
     particle=new Particle(mouseX,10,10);
     particle.display();
     //console.log(particle.body.position.y)
    //console.log("x"+particle.body.position.x)
+   turn++;
   }
 }
