@@ -1,2 +1,2 @@
 
-### Output Link : https://vishnupriya-whitehatjr.github.io/c31-v2-PlinkoClone/
+### Output Link : https://cheshta-kabra.github.io/Plinko-With--Score/
